@@ -1,67 +1,121 @@
-
 *{
-    margin: 0;
-    padding: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial;
 }
 
-
-header h1{
-    background: linear-gradient(120deg, #c33764, #1d2671);
-    font-size: 150px;
-    color: rgb(245, 106, 129); 
+body{
+background: linear-gradient(120deg, #1d2671, #c33764);
 }
 
-header h4{
-    font-size: 30px;
-    color: pink;
+.contenedor{
+text-align: center;
 }
 
-header h5{
-    font-size: 30px;
-    color: rgb(231, 228, 228);
+/* ----- MENU ----- */
+.menu{
+padding: 40px;
 }
 
-.divicion{    
-    text-align: center;
-    padding: 10px;
-    background: linear-gradient(120deg, #1d2671, #c33764);
+.menu h1{
+color: white;
+font-size: 40px;
+margin-bottom: 20px;
 }
 
-/* ---------- IMÁGENES ---------- */
-.imagen{
-    margin: 10px;
-    width: 220px;
-    transition: transform 0.3s ease;
-    /*cursor: pointer;*/
+.opciones{
+display: flex;
+justify-content: center;
+gap: 20px;
 }
 
-/* Crece al pasar el mouse */
-.imagen:hover{
-    transform: scale(1.15);
+.boton{
+background: #ff4b7a;
+padding: 15px 25px;
+color: white;
+text-decoration: none;
+border-radius: 10px;
+transition: 0.3s;
 }
-/* -------------------------------- */
 
-article{
-    color: pink;
-    font-size: 30px;
+.boton:hover{
+background: #ff8fab;
+transform: scale(1.1);
+}
+
+/* ----- SECCIONES ----- */
+.disciplina{
+margin: 40px 20px;
+padding: 20px;
+border-radius: 15px;
+}
+
+.aerea{
+background: rgba(0,0,0,0.3);
+}
+
+.pole{
+background: rgba(0,0,0,0.5);
+}
+
+.disciplina h2{
+font-size: 45px;
+color: #ffcce6;
+}
+
+.disciplina h4{
+color: white;
+margin-bottom: 10px;
 }
 
 article h3{
-    margin: 10px;
-    padding: 10px;  
-    color: pink;  
+color: pink;
+margin: 15px;
 }
 
-a{
-    color: green;    
+.horario{
+color: white;
+font-size: 18px;
 }
 
-footer h3{
-    background: linear-gradient(120deg, #8b1d40, #0c124e);
-    margin: 0 10px;
+.contacto{
+color: #ffd1e8;
+margin-top: 10px;
 }
 
-.pie{
-    color: rgb(255, 200, 236);
+/* ----- IMÁGENES ----- */
+.galeria{
+margin-top: 15px;
 }
 
+.imagen{
+width: 220px;
+margin: 10px;
+transition: 0.3s;
+}
+
+.imagen:hover{
+transform: scale(1.15);
+}
+
+/* ----- DIRECCIÓN ----- */
+.direccion{
+margin-top: 30px;
+padding: 20px;
+color: white;
+}
+
+/* RESPONSIVO */
+@media(max-width: 700px){
+.opciones{
+flex-direction: column;
+}
+
+
+.imagen{
+    width: 90%;
+}
+
+
+}
